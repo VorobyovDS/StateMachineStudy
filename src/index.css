@@ -63,6 +63,29 @@ body {
   background: rgba(19, 166, 30, 0.81);
 }
 
+.men {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 300px;
+  height: 300px;
+  transform: translate(-50%, -50%);
+  background-image: url("gif/empty.gif");
+  background-size: cover;
+}
+
+.men.__going_left {
+  background-image: url("gif/LeftMen.gif");
+}
+
+.men.__going_right {
+  background-image: url("gif/RightMen.gif");
+}
+
+.men.__seat {
+  background-image: url("gif/seatMen.gif");
+}
+
 #root {
   height: 100%;
   width: 100%;

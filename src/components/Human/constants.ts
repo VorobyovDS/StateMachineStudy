@@ -9,13 +9,9 @@ export const enum HumanStateType {
   HUMAN_UP_WITH_SOFA = 'HUMAN_UP_WITH_SOFA',
 }
 
-export const humanInitialState = {
-  isHumanGoing: true,
-  isHumanToRun: true,
-  isHumanSleep: false,
-  isHumanSeat: true,
-  isHumanSeatInSofa: true,
-  isHumanUpWithSofa: false,
-  isHumanNotSleep: false,
-  isHumanWait: true,
+export const changeMapState = {
+  HUMAN_WAIT: ['HUMAN_WAIT', 'HUMAN_GOING', 'HUMAN_SEAT'],
+  HUMAN_GOING: ['HUMAN_WAIT', 'HUMAN_GOING'],
+  HUMAN_SEAT: ['HUMAN_WAIT', 'HUMAN_SEAT'],
 };
+
